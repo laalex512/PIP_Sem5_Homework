@@ -82,3 +82,37 @@
 #         tempIndex += 1
 
 # window.mainloop()
+
+
+# # Реализуйте RLE алгоритм: реализуйте модуль сжатия и восстановления данных.
+
+# initData = "aaaaaaabcccddefggggg"
+
+
+# def Encode(data):
+#     data += " "
+#     count = 1
+#     encodeStr = ""
+#     for i in range(len(data)-1):
+#         if data[i] == data[i+1]:
+#             count += 1
+#         else:
+#             encodeStr += str(count) + data[i]
+#             count = 1
+#     return encodeStr
+
+
+# def Decode(string):
+#     data = ""
+#     count = ""
+#     for i in string:
+#         if i.isdigit():
+#             count += i
+#         else:
+#             data += i*int(count)
+#             count = ""
+#     return data
+
+
+# print(Encode(initData))
+# print(Decode(Encode(initData)))
